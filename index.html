@@ -37,6 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=M+PLUS+Rounded+1c&family=Shippori+Mincho&family=WindSong:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=M+PLUS+Rounded+1c&family=Shippori+Mincho&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Header -->
@@ -131,9 +132,9 @@
                 >
               </p>
             </div>
-            <div id="mask-sec1">
+            <!-- <div id="mask-sec1">
               <img src="img/mask-sec1.png" />
-            </div>
+            </div> -->
             <button class="cta-pc2">
               <p><img src="img/pc.svg" alt="PC Icon" />24時間 予約受付中</p>
               <p class="pc-text">無料カウンセリング予約</p>
@@ -536,7 +537,7 @@
       <div class="section-7-container">
         <div class="case-title">
           <div class="case-title-wrapper">
-            <img src="img/case_1.png" alt="Case Title Decoration" />
+            <img src="img/case_1.png"/>
             <div class="case-text">
               <p>
                 Case
@@ -635,8 +636,11 @@
 
       <!-- Flow 01 -->
       <div class="flow-container left">
+        <div class="flow-header">
         <p class="flow-number"><span class="flow-number-text">Flow</span> 01</p>
         <img src="img/flow_01.png" class="flow-img" />
+        </div>
+
         <div class="flow">
           <div class="flow-content">
             <div class="flow-text">
@@ -712,13 +716,7 @@
                 精密検査の結果をもとに診断し、最終的な治療プランをご提案します。治療を開始される場合はマウスピースを発注します。
               </p>
               <div>
-                <p
-                  style="
-                    background-color: #fefed8;
-                    padding: 50px 70px 50px 70px;
-                    text-align: left;
-                  "
-                >
+                <p id="flow-4-txt">
                   最適な治療を行っていただくため、歯並びの状態によってはマルチブラケットとの併用あるいはマルチブラケットのみの治療をご提案する場合がございます。
                 </p>
               </div>
@@ -826,7 +824,7 @@
           <div class="form-group full-width">
             <label>氏名</label>
             <div class="input-wrapper">
-              <span class="optional">必須</span>
+              <span class="required">必須</span>
               <input type="text" placeholder="氏名" />
             </div>
           </div>

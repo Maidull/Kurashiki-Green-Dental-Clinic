@@ -34,6 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+//header
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector(".header");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      header.classList.add("transparent");
+    } else {
+      header.classList.remove("transparent");
+    }
+  });
+});
+
 //tab
 document.addEventListener("DOMContentLoaded", () => {
   const tabButtons = document.querySelectorAll(".tab-button");
