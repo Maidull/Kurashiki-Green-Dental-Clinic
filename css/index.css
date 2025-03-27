@@ -151,6 +151,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   font-family: "Noto Sans JP";
+  transition: all 0.3s ease-in-out;
 }
 .cta-tel p,
 .cta-pc p {
@@ -172,6 +173,10 @@ body {
   font-weight: bold;
   font-family: "Noto Sans JP";
 }
+.cta-tel:hover,
+.cta-pc:hover {
+  transform: scale(1.05);
+}
 
 .cta-pc {
   background-color: #EFB545;
@@ -181,10 +186,16 @@ body {
   width: 32px;
   height: 25px;
 }
+.cta-pc:hover {
+  background-color: #DE9300;
+}
 
 .cta-tel {
   background-color: #A9C56D;
   border-color: #89BB4A;
+}
+.cta-tel:hover {
+  background-color: #89BB4A;
 }
 
 .section-1 {
@@ -331,6 +342,7 @@ body {
   margin-top: 10px;
   position: relative;
   z-index: 1;
+  transition: all 0.3s ease-in-out;
 }
 .section-1 .section1-image .section1-overlay .content-right .cta-pc2 p {
   margin: 0;
@@ -346,6 +358,9 @@ body {
 .section-1 .section1-image .section1-overlay .content-right .cta-pc2 img {
   width: 32px;
   height: 30px;
+}
+.section-1 .section1-image .section1-overlay .content-right .cta-pc2:hover {
+  background-color: #DE9300;
 }
 
 .small-font {

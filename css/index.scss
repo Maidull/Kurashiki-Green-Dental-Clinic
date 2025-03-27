@@ -176,6 +176,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   font-family: 'Noto Sans JP';
+  transition: all 0.3s ease-in-out;
 
   p {
     margin: 0;
@@ -196,6 +197,9 @@ body {
     font-weight: bold;
     font-family: 'Noto Sans JP';
   }
+  &:hover {
+    transform: scale(1.05); 
+  }
 }
 
 .cta-pc {
@@ -206,11 +210,19 @@ body {
     width: 32px;
     height: 25px;
   }
+
+  &:hover {
+    background-color: #DE9300;
+  }
 }
 
 .cta-tel {
   background-color: #A9C56D;
   border-color: #89BB4A;
+
+  &:hover {
+    background-color: #89BB4A; 
+  }
 }
 
 //section-1
@@ -368,6 +380,7 @@ body {
           margin-top: 10px;
           position: relative;
           z-index: 1;
+          transition: all 0.3s ease-in-out;
 
           p {
             margin: 0;
@@ -385,6 +398,10 @@ body {
           img {
             width: 32px;
             height: 30px;
+          }
+
+          &:hover {
+            background-color: #DE9300; 
           }
         }
       }
