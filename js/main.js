@@ -49,17 +49,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //tab
 document.addEventListener("DOMContentLoaded", () => {
-  const tabButtons = document.querySelectorAll(".tab-button");
-  const tabContents = document.querySelectorAll(".tab-content");
+  document.querySelectorAll(".case-details").forEach((caseDetail) => {
+    const tabButtons = caseDetail.querySelectorAll(".tab-button");
+    const tabContents = caseDetail.querySelectorAll(".tab-content");
 
-  tabButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      tabButtons.forEach((btn) => btn.classList.remove("active"));
-      tabContents.forEach((content) => content.classList.remove("active"));
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        tabButtons.forEach((btn) => btn.classList.remove("active"));
+        tabContents.forEach((content) => content.classList.remove("active"));
 
-      button.classList.add("active");
-      const target = document.getElementById(button.dataset.tab);
-      target.classList.add("active");
+        button.classList.add("active");
+        const target = caseDetail.querySelector(`#${button.dataset.tab}`);
+        if (target) target.classList.add("active");
+      });
     });
   });
 });
